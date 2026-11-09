@@ -4,17 +4,18 @@
 
 ## Thông tin nhóm
 
-- Tên nhóm:
-- Candidate problem nhóm chọn (1 câu):
-- Quyết định cuối (Go / Not Yet / No-Go):
+- Tên nhóm: BabyShark
+- Candidate problem nhóm chọn (1 câu): *(điền sau CP3)*
+- Quyết định cuối (Go / Not Yet / No-Go): *(điền sau CP6)*
+- Repo: https://github.com/tundut/K5-L3B-DAY02-BabyShark-DiscoveryProblemFraming
 
 ## Thành viên
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
+| 1 | | | Nhóm trưởng / điều phối | tundut |
+| 2 | Huỳnh Văn Cường | 2A202603866 | Pitch card; hỗ trợ PS / ghi chép | |
+| 3 | Lê Ngọc Khánh | 2A202603804 | | lekhanh2k5-dotcom |
 | 4 | | | | |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
