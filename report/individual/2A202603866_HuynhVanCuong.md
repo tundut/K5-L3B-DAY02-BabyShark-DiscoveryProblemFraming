@@ -23,11 +23,12 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | 3 | Tốn thời gian | Khi app chỉ ghi điểm đón chung chung trong khu Vin/tòa nhà, tôi muốn biết khách đang ở cổng/sảnh nào, để khỏi chạy lòng vòng trong khu và nhắn qua lại nhiều lần. | Tài xế; khách | Nhắn 2–5 tin/lượt; vòng trong khu khoảng 5–10 phút/chuyến ở điểm đón phức tạp. |
 | 4 | Pain từ người khác | Khi tôi đã tới điểm đón mà khách hủy sát giờ, tôi muốn được ghi nhận rõ mình đã di chuyển/chờ bao lâu, để khỏi mất cả đoạn đường chạy tới mà không có chuyến thay thế ngay. | Tài xế | Mất khoảng 10–20 phút đã chạy tới điểm; gặp vài lần trong ngày cao điểm (ước lượng từ quan sát tài xế). |
 | 5 | Lặp lại | Khi trả hoặc đổi xe thuê cuối ngày/cuối kỳ, tôi muốn chốt ảnh và tình trạng xe một lần có xác nhận, để sau không bị đổ lỗi hỏng phát sinh sau khi tôi dùng. | Tài xế thuê xe; bên cho thuê | Mỗi lần trả xe mất khoảng 10–15 phút chụp/gửi; tranh chấp hiện trạng thỉnh thoảng xảy ra. |
+| 6 | Cần đọc, tổng hợp nhiều thông tin | Khi đang treo sự cố/BH và phải đối chiếu chat CSKH, tin nhắn kế toán, ảnh xe và lịch trừ thuê, tôi muốn nắm được trạng thái sự cố và khoản nào đã/đang trừ trong một chỗ, để khỏi lướt nhiều luồng rồi vẫn không biết đang nợ hay được hoàn. | Tài xế thuê xe; CSKH / kế toán | Mỗi lần hỏi lại ~10–30 phút; phải đọc lại chuỗi chat + bill; treo ngày–tuần (quan sát/nghe kể, cùng hệ pain #1). |
 
 **Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
 
 - Tự nghĩ trước: (1) thuê xe hỏng / thiếu theo dõi BH + tính giờ (ngày đầu chỉ là một case cụ thể, không phải lúc nào cũng vậy), (2) chờ khách khu Vin phải vòng vòng / rủi ro hủy.
-- Dùng AI/thought-partner chỉ để **mở rộng thêm 3 góc** cùng hệ tài xế (điểm đón khó tìm, hủy sát giờ, checklist trả xe) — giữ vì khớp vận hành thật, có thể đo thời gian.
+- Dùng AI/thought-partner để **mở rộng thêm góc** cùng hệ tài xế (điểm đón khó tìm, hủy sát giờ, checklist trả xe, và góc tổng hợp chat/bill khi treo sự cố) — giữ vì khớp vận hành thật, có thể đo thời gian.
 - Bỏ các gợi ý kiểu “làm chatbot / agent tự quyết hủy chuyến / tự dừng billing” — đó là giải pháp trá hình, không ghi vào cột Job Story.
 
 ---
@@ -157,16 +158,16 @@ Quy trình nháp hiện tại:
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Pitch #1 thuê xe (billing vs sự cố mờ), #2 chờ khách Vin, #3 điểm đón | **#1 được chọn** làm candidate nhóm |
+| Phản biện bài của bạn khác | Với Khánh: metric chính “không sót” hay “giảm phút”? Với Đức: checklist nguồn đã đủ chưa? | Giữ bài học tập/JD làm hướng tiếp theo, không trộn vào MVP thuê xe |
+| Nhận phản biện | Đức/Khánh hỏi: policy pause đã có chưa? Kiểm chứng tài xế trong lab thế nào? | Thu hẹp MVP = mã sự cố + gắn billing; ghi Viability #6 + ngưỡng dừng; không hứa AI |
+| Gom cluster / cây OST | Gom 9 card; OST outcome = không mất tiền oan / không trả xe khi đã báo lỗi | Gạch solution “chatbot/agent tự pause” |
+| Chọn candidate problem | Tranh luận shortlist với bài gom tài liệu (lab-fit cao hơn) | Nhóm chọn thuê xe vì lệch quy trình + kết luận Rule sạch |
+| Kiểm chứng / research | Structured quan sát/nghe kể + research Moiboo Pause Rental, Rently Incident | Đổi từ “có thể cần AI” → **Rule đủ cho MVP** |
+| Quy trình nhóm | Vẽ hai mạch lệch → form→mã→rule billing→HITL | Mục 4 `group_report.md` |
+| Problem Statement | Viết v0; v1 thêm “fleet có SOP pause” + AI point = không có ở MVP | PS không chứa chatbot |
+| Mức can thiệp AI | So sánh 4 mức; loại Agent đụng tiền | **Chốt Rule** |
+| Quyết định | Go nhỏ + ngưỡng dừng (% mã, pause nhầm, policy cấm pause) | **Go, phạm vi nhỏ** |
 
 ---
 
@@ -174,46 +175,46 @@ Quy trình nháp hiện tại:
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | Thought-partner làm rõ trọng tâm pain + gợi ý thêm 3 dòng cùng hệ tài xế | Giúp tách “xe hỏng” vs “thiếu theo dõi/tính giờ”; bổ sung điểm đón / hủy sát giờ / checklist trả xe | Hay đẩy sang chatbot/agent tự quyết | Chỉ giữ Job Story + dấu hiệu; bỏ solution-first |
-| CP2 Problem Card | Điền 3 card; nhờ góc PM hoài nghi soi “AI có cần không” | Nhắc MVP Rule đủ cho ticket/billing SOP | Hay đẩy agent tự pause billing | Giữ Rank 1 + cảm nhận Rule/No AI; AI chỉ phụ |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Thought-partner làm rõ pain + gợi ý thêm 3 dòng cùng hệ tài xế | Tách “xe hỏng” vs “thiếu theo dõi/tính giờ”; bổ sung điểm đón / hủy / checklist trả xe | Hay đẩy chatbot/agent tự quyết | Chỉ giữ Job Story + dấu hiệu |
+| CP2 Problem Card | Điền 3 card; PM hoài nghi soi “AI có cần không” | Nhắc MVP Rule đủ cho ticket/billing SOP | Đẩy agent tự pause billing | Giữ Rank 1 = Rule/No AI; AI chỉ phụ |
+| CP4 Research | Gợi ý tool fleetrental (pause/incident) | Nhanh ra hướng Pause Rental / incident status | Link marketing; gợi ý “build AI CSKH” | Tự mở Moiboo + Rently; bỏ nguồn mở không ổn; kết luận không tự xây agent |
+| CP5 Quy trình | Nháp ASCII before/after + boundary | Làm rõ hai mạch lệch | Gộp tạo ticket với AI | Tách Rule tạo mã + HITL đổi tiền; AI optional draft sau |
+| CP5–6 Problem Statement | Soi lỗ hổng metric/boundary | Nhắc đừng bịa % trả xe | Nhét giải pháp vào PS | Metric có mã + cờ billing; baseline trả xe đo sau |
+| CP6 Mức can thiệp / quyết định | Hỏi khi nào cần Agent | Nhắc Agent = tự quyết bước / tiền | Thiên Workflow/AI dù Rule chưa thử | Ép “vì sao không mức đơn giản hơn” → Go Rule + ngưỡng dừng |
 
 ---
 
 ## 6. Reflection (CP7)
 
-Trả lời bằng trải nghiệm thật sau phần nhóm. **Không dùng AI để viết thay.**
+Trả lời bằng trải nghiệm thật sau phần nhóm.
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
-*(điền sau CP3)*
+Khánh tách được hai bottleneck (sót vs phút). Mình áp dụng lại cho bài thuê xe: tách “thiếu mã/trạng thái sự cố” khỏi “billing vẫn chạy”, không gộp thành “CSKH kém”. Đức cho thấy bài JD dễ trượt vì metric tự đánh giá năng lực ảo; nhờ đó mình không bịa baseline % trả xe, mà để đo sau theo số nội bộ. Bài học tập của Khánh dễ poll trong lớp hơn, nên khi nhóm chọn thuê xe mình cũng nói thẳng: điểm yếu là kiểm chứng domain ngoài lớp, phải dựa quan sát/nghe kể + research tool và ghi hạn chế mẫu.
 
 **6.2. Nhóm có lúc nào bị "solution-first" không? Lúc đó nhóm nhận ra và xử lý thế nào?**
 
-*(điền sau)*
+Có. Lúc đầu dễ nhảy sang “chatbot báo lỗi” hoặc “agent tự pause billing”. Khi vẽ OST và đọc research Pause Rental / incident status, nhóm thấy thị trường đã có rule gắn downtime với agreement. Cách xử lý: gạch chatbot/agent khỏi tầng opportunity; chốt MVP = form + mã sự cố + rule gắn billing + người duyệt.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
-*(điền sau)*
+Có. Card #1 từng dễ bị hiểu là “ngày đầu nhận xe luôn hỏng” hoặc “cần AI tạo ticket”. Sau phản biện của nhóm/AI đóng vai PM: mình sửa (1) ngày đầu chỉ là ví dụ case, (2) tạo mã là Rule không phải AI, (3) nếu fleet không cho pause theo policy thì không Go full. Sang Problem Statement v1, AI intervention point ghi rõ không có ở MVP; actor thu hẹp fleet có SOP pause.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 
-*(điền sau CP4)*
+Bất ngờ nhất ở research: Pause Rental và incident gắn booking đã là tính năng sản phẩm fleetrental. Vậy phần đáng làm không phải xây AI, mà là nối hai mạch + SOP + đo % có mã và cờ billing. Phần quan sát/nghe kể xác nhận pain tiền và trả xe, nhưng cũng có tín hiệu phản bác (một số nơi đã có form báo hỏng; “ngày đầu hỏng” không phải luôn xảy ra) — nên nhóm thu hẹp scope thay vì phóng đại.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
-*(điền sau CP5–6)*
+Khó nhất là Success Metric có baseline thật: chưa có % trả xe cứng nên phải viết so với baseline nội bộ đo sau, không bịa số. Khó thứ hai là Boundary vì bài đụng tiền: phải viết AI không được tạm dừng/hoàn, và HITL là bắt buộc, nếu không PS sẽ trượt sang giải pháp nguy hiểm.
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
-*(điền sau)*
+Nếu làm lại, mình sẽ xin thêm 1–2 buổi hỏi ngắn với tài xế/CSKH trước CP3 để Feasibility chắc hơn. Với nhóm, mình sẽ phản biện mạnh hơn mỗi khi ai đề xuất Agent đụng billing: hỏi ngay ai audit, ai chịu nếu trừ/hoàn sai, và Rule đã cover chưa.
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm.
 
-*(điền cuối buổi)*
+Problem: tài xế đã báo xe thuê hỏng nhưng sự cố không rõ trên hệ thống trong khi tiền thuê vẫn trừ tự động. Quy trình hiện tại chạy hai mạch lệch — chat/BH một đường, billing một đường — dẫn tới tranh chấp hoặc trả xe. Metric: hầu hết case có mã+status trong &lt;5 phút, có cờ gắn billing trước cuối ngày sự cố, và theo dõi giảm trả xe so với baseline nội bộ. Boundary: AI không tự tạm dừng/hoàn/đóng case; mọi đổi tiền cần mã sự cố và người duyệt. Mức can thiệp: MVP là Rule (form→mã→pause/ghi nợ); AI chỉ có thể draft ticket sau này. Quyết định Go phạm vi nhỏ trên fleet có SOP, kèm ngưỡng dừng nếu không tạo được mã kịp, pause nhầm, hoặc policy cấm pause.
 
 ---
 
@@ -221,4 +222,6 @@ Trả lời bằng trải nghiệm thật sau phần nhóm. **Không dùng AI đ
 
 - [CHECKPOINTS.md](../../CHECKPOINTS.md)
 - [docs/01-worksheet.md](../../docs/01-worksheet.md)
-- Quan sát / nghe tài xế ô tô công nghệ và tài xế thuê xe (cần kiểm chứng thêm ở CP4 nếu nhóm chọn candidate này)
+- [report/team/group_report.md](../team/group_report.md)
+- Moiboo Pause Rental / daily rental billing; Rently Incident (mục 3.3 & 10 báo cáo nhóm)
+- Quan sát / nghe tài xế thuê xe & ô tô công nghệ (CP1–CP2)
