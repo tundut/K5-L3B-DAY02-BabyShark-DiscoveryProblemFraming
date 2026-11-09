@@ -15,7 +15,7 @@
 |---:|---|---|---|---|
 | 1 | | | Nhóm trưởng / điều phối | tundut |
 | 2 | Huỳnh Văn Cường | 2A202603866 | Pitch card; hỗ trợ PS / ghi chép | |
-| 3 | | | | |
+| 3 | Lê Ngọc Khánh | 2A202603804 | | lekhanh2k5-dotcom |
 | 4 | | | | |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
