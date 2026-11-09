@@ -28,6 +28,7 @@
 | 8 | Đức | Học công nghệ mới: chọn tài liệu khớp trình độ/mục tiêu | SV IT tự học | Đọc–đánh giá tài liệu ~25'/lần | Cường: Checklist nguồn GV/cộng đồng đã đủ chưa? |
 | 9 | Đức | Gặp lỗi project: muốn khoanh nguyên nhân nhanh | SV làm project | Tìm nguyên nhân ~30'/lỗi | Khánh: Debugger + log giải được bao nhiêu %? |
 
+
 ### 2.2. Cluster
 
 | Cluster | Các candidate | Pattern chung |
