@@ -79,16 +79,21 @@ Không ghi email hay số điện thoại vào bảng này, vì repo có thể �
 
 **Phần việc phụ trách:**
 
-- *(Đức tự điền)*
+- Nhóm trưởng/điều phối; phụ trách CP3, hỗ trợ CP4–CP5, phụ trách CP6 về mức can thiệp AI và quyết định.
 
 **Đóng góp cụ thể:**
 
--
+- Điều phối thảo luận, gom cluster, xây cây OST và tham gia chấm điểm candidate.
+- Pitch card về đối chiếu kỹ năng với JD; đặt câu hỏi phản biện về việc form và mã ticket rule-based có thể thay thế AI hay không.
+- Góp ý xác định boundary: AI không tự quyết định billing, đổi xe hoặc hoàn tiền; các quyết định này cần người kiểm tra.
+- Góp phần hoàn thiện ma trận No AI/Rule/Workflow/Agent, AI Canvas, tiêu chí đánh giá và quyết định Go phạm vi nhỏ với MVP Rule.
 
 **Bằng chứng:**
 
--
+- `report/team/group_report.md` mục 2–8
+- `report/individual/2A202603818_NguyenPhanTuanDuc.md` mục 3–6
 
 **Điều mình học được từ phần nhóm:**
 
--
+- Cần bắt đầu từ pain, quy trình và metric trước khi nghĩ đến AI.
+- Với bài toán có quyết định liên quan đến tiền thuê, Rule và người kiểm tra an toàn hơn Agent tự động.

@@ -139,7 +139,11 @@ HIỆN TẠI — 60 phút/lỗi (ước tính)
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
 |---|---|---|
-| | | |
+| Actor “sinh viên năm cuối” vẫn khá rộng; chưa phân biệt rõ ngành học, vị trí ứng tuyển và mức kinh nghiệm. | Đồng ý một phần | Giữ phạm vi là sinh viên ngành Công nghệ thông tin đang chuẩn bị ứng tuyển thực tập hoặc Fresher, đồng thời bổ sung bối cảnh phải đối chiếu nhiều JD cho cùng một nhóm vị trí. |
+| Baseline 90 phút/lần và bottleneck 30 phút chủ yếu là ước tính, chưa có dữ liệu ghi nhận từ nhiều lần thực tế. | Đồng ý | Ghi rõ đây là số liệu ban đầu từ tự theo dõi, không xem là bằng chứng cuối cùng; bổ sung giả định cần kiểm chứng bằng cách bấm giờ khi phân tích một số JD trong CP4. |
+| “Đối chiếu với năng lực hiện tại” có thể không phải một bước độc lập, vì việc tự đánh giá kỹ năng cũng phụ thuộc vào project, bài tập và kinh nghiệm thực tế. | Đồng ý | Tách bước 4 thành hai phần: lập bằng chứng cho mức độ thành thạo và so sánh với yêu cầu JD; xem việc thiếu bằng chứng đáng tin cậy là nguyên nhân cần kiểm chứng. |
+| Checklist hoặc bảng so sánh thủ công có thể đã giải quyết phần lớn vấn đề; chưa chứng minh AI cần thiết. | Đồng ý | Giữ phương án không dùng AI làm baseline: checklist kỹ năng và bảng tổng hợp JD. Chỉ xem AI là giả thuyết hỗ trợ trích xuất, nhóm các yêu cầu tương đồng và gợi ý điểm cần kiểm tra. |
+| Metric “danh sách kỹ năng cần cải thiện phải có căn cứ” còn định tính; giảm thời gian không đảm bảo kết quả đánh giá chính xác. | Đồng ý | Bổ sung tiêu chí đánh giá: mỗi kỹ năng thiếu phải liên kết với yêu cầu xuất hiện trong JD và một bằng chứng trong hồ sơ/project; kiểm tra lại kết quả trước khi lập kế hoạch học tập. |
 
 ---
 
@@ -147,16 +151,16 @@ HIỆN TẠI — 60 phút/lỗi (ước tính)
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Trình bày việc khó xác định kỹ năng còn thiếu khi đối chiếu JD. | Đóng góp một candidate có quy trình và metric rõ để nhóm so sánh với pain từ stakeholder. |
+| Phản biện bài của bạn khác | (1)Tôi hỏi Cường: “Nếu chỉ dùng form bắt buộc và mã ticket rule-based thì đã giải quyết được bao nhiêu phần? Phần nào còn cần AI?” (2)Tôi hỏi Khánh: "Nếu chỉ tạo album ảnh riêng cho từng môn và ghim tin nhắn của giảng viên, vấn đề có còn đủ nghiêm trọng để cần AI không?" | Giúp nhóm không mặc định rằng vấn đề nào cũng cần chatbot hoặc agent. |
+| Nhận phản biện | Câu hỏi tôi nhận được từ Khánh: “Lần gần nhất Đức tự đối chiếu kỹ năng với JD là khi nào, lúc đó Đức có đánh giá sai kỹ năng nào của mình không và làm sao phát hiện ra là mình bị thiếu?” | Lần gần nhất là khi tôi xem JD thực tập/Fresher. Tôi nhận ra mình đánh giá quá cao kỹ năng lập trình khi không đưa ra được project hoặc kết quả cụ thể để chứng minh một số yêu cầu trong JD. |
+| Gom cluster / cây OST | Gom các ý về xe hỏng, thiếu mã ticket, gửi lại bằng chứng và CSKH tìm thông tin nhiều kênh vào cluster “bảo hành không có visibility”. | Cây OST tập trung vào outcome giảm thời gian chờ không rõ trạng thái và giảm tranh chấp, không tập trung vào chatbot. |
+| Chọn candidate problem | So sánh các card theo actor, bottleneck, impact, metric và khả năng làm lab. | Nhóm chọn Problem #1 của Huỳnh Văn Cường: xe hỏng sớm nhưng thiếu mã theo dõi, trạng thái không rõ và giờ thuê vẫn có thể chạy. |
+| Kiểm chứng / research | Hỗ trợ liệt kê giả định: tỷ lệ case có mã, thời gian chờ, số lần hỏi lại, tình trạng tính giờ và lý do trả xe. | Ước lượng được các trường hợp, thời gian mà tài xế gặp vấn đề tương tự . |
+| Quy trình nhóm | Góp ý tách rule-based và AI trong quy trình báo lỗi → tạo ticket → cập nhật trạng thái → tạm ngưng tiền thuê. | Con người vẫn kiểm tra và không cho AI tự quyết định tạm dừng tiền thuê. |
+| Problem Statement | Góp ý viết theo pain và actor, không đưa chatbot vào Problem Statement. | Statement tập trung vào tài xế thuê xe và CSKH, AI chỉ xuất hiện ở phần can thiệp sau đó. |
+| Mức can thiệp AI | Đề xuất đưa AI vào soạn ticket để tiết kiệm thời gian, còn quy trình sau đó cần chuẩn hóa để đồng nhất, tránh mất thời gian và tiền cho tài xế. | Nhóm nghiêng về Workflow có AI hỗ trợ soạn ticket/checklist; quyết định tiền thuê dùng rule hoặc người duyệt. |
+| Quyết định | Góp ý chọn pilot nhỏ, đo được và có ngưỡng dừng. | Đề xuất **Not Yet** nếu chưa có dữ liệu xác nhận từ đối tác; chỉ chuyển **Go** khi pilot chứng minh cải thiện so với baseline. |
 
 ---
 
@@ -164,12 +168,12 @@ HIỆN TẠI — 60 phút/lỗi (ước tính)
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Gợi ý thêm problem theo 4 lăng kính sau khi tự scan. | Giúp nhận ra góc thiếu mã ticket, giờ thuê vẫn chạy và CSKH gom thông tin nhiều nơi. | AI thường chuyển nhanh sang chatbot tổng quát. | Chỉ giữ ý gắn với trải nghiệm/quan sát cụ thể và loại solution trá hình. |
+| CP2 Problem Card | Đóng vai PM hoài nghi để soi actor, bottleneck, metric và phương án không-AI. | Bắt được điểm yếu về baseline ước tính và việc chưa chứng minh AI cần thiết. | Phản biện còn chung chung, chưa phân biệt rõ tài xế, CSKH và xưởng. | Tách actor, giữ form + mã ticket làm baseline và đưa tỷ lệ trả xe vào giả định cần kiểm chứng. |
+| CP4 Research | Hỗ trợ lập assumption map và câu hỏi kiểm chứng theo hành vi đã xảy ra. | Giúp tập trung vào lần gần nhất báo lỗi, thời gian chờ và workaround. | AI không thể thay dữ liệu từ đối tác hoặc log ticket. | Phân biệt quan sát với giả định, không tự điền tỷ lệ trả xe. |
+| CP5 Quy trình | Gợi ý cách biểu diễn quy trình hiện tại và tương lai. | Giúp nhìn rõ điểm chèn của rule, AI và người kiểm tra. | Dễ đề xuất agent tự pause billing hoặc tự duyệt bồi hoàn. | Giữ quyết định tiền thuê/đổi xe ở con người; AI chỉ draft/checklist. |
+| CP5–6 Problem Statement | Kiểm tra statement có lẫn giải pháp, metric có baseline/target và boundary có rõ không. | Giúp sửa từ “xây hệ thống AI” thành vấn đề thiếu visibility sau báo lỗi. | Có xu hướng viết mục tiêu rộng như “tối ưu CSKH”. | Thu hẹp thành quy trình tạo mã và cập nhật trạng thái cho case xe hỏng sớm. |
+| CP6 Mức can thiệp / quyết định | So sánh No AI, Rule, Workflow và Agent; rà rủi ro Value/Usability/Feasibility/Viability. | Giúp thấy Workflow phù hợp hơn Agent vì các bước đã định sẵn. | Dễ khuyến nghị Go khi còn thiếu bằng chứng. | Đề xuất pilot nhỏ, có HITL, đo trước–sau và dùng Not Yet nếu chưa xác minh pain. |
 
 ---
 
@@ -179,18 +183,31 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Tôi nhận ra một problem tốt không chỉ là việc mất thời gian mà còn phải có actor cụ thể, một bước nghẽn quan sát được và hậu quả đủ rõ. Card của tôi về đối chiếu JD có quy trình dễ mô tả, nhưng bằng chứng về mức độ đau vẫn yếu hơn card xe hỏng của Cường. Card của Cường có pain từ stakeholder và hậu quả tài chính rõ hơn, nhưng các thông tin về tỷ lệ trả xe vẫn cần kiểm chứng. Tôi cũng học được cách phân biệt opportunity với solution: “cần chatbot CSKH” là giải pháp, còn “không biết trạng thái bảo hành sau khi báo lỗi” mới là pain cần nghiên cứu.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Có. Nhóm từng nghĩ ngay đến chatbot nhận báo lỗi, AI đọc ảnh và tự động tạm dừng billing, trong khi chưa chứng minh bước nào thật sự cần AI. Nhóm nhận ra điều này khi đặt câu hỏi: “Form bắt buộc và mã ticket rule-based đã giải quyết được bao nhiêu phần?”. Sau đó, nhóm quay lại quy trình hiện tại, tách phần tạo mã/trạng thái khỏi phần AI hỗ trợ. Nhờ vậy, Problem Statement không bị viết theo tên công cụ và vẫn cho phép kết luận cuối cùng là chỉ cần Rule hoặc Workflow.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Có. Ban đầu tôi nghiêng về việc chọn card của mình vì có metric thời gian 90 phút xuống dưới 30 phút và phù hợp với sinh viên IT. Sau khi nghe Cường trình bày, tôi đổi ý vì card xe hỏng có người chịu ảnh hưởng ngoài nhóm, có khả năng gây mất thu nhập và có điểm nghẽn kéo dài theo ngày–tuần. Tuy nhiên, tôi đề nghị nhóm ghi rõ các giả định về tỷ lệ trả xe, giờ thuê và mã ticket để không biến một câu chuyện thuyết phục thành kết luận chưa có bằng chứng.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Điều đáng chú ý là nhóm có thể mô tả pain khá thuyết phục nhưng vẫn chưa có số liệu đủ chắc để kết luận về tỷ lệ trả xe. Điều này cho thấy trải nghiệm cá nhân và lời kể trong nhóm chỉ là tín hiệu ban đầu, không phải bằng chứng đại diện. Khi kiểm chứng, tôi sẽ ưu tiên xem người được hỏi có thực sự chờ bảo hành nhiều ngày, hỏi lại trạng thái bao nhiêu lần và bị tính giờ thuê ra sao. Nếu tín hiệu không đồng nhất, problem cần thu hẹp theo đối tác hoặc loại hợp đồng thay vì giữ actor quá rộng.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Khó nhất là mô tả đúng vấn đề mà không vô tình đưa giải pháp vào. Tôi phải tách “thiếu mã và trạng thái sau khi báo lỗi” khỏi “nên xây app/chatbot”. Metric cũng phải vừa tham vọng vừa đo được: tỷ lệ case có mã trong dưới 5 phút có thể đo bằng log, nhưng tỷ lệ trả xe cần baseline nội bộ và khoảng thời gian đủ dài. Vì vậy, v0 chỉ nên ghi pain, quy trình, impact, metric và boundary; đến v1 mới thêm điểm AI can thiệp, người duyệt và rủi ro.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+
+Nếu làm lại, tôi sẽ yêu cầu nhóm xác định nguồn dữ liệu trước khi chấm điểm candidate. Tôi cũng sẽ hỏi rõ: ai sở hữu dữ liệu giờ thuê và trạng thái bảo hành, tỷ lệ nào được xem là đủ tốt để pilot tiếp tục, và nếu không có AI thì form + ticket + SOP có giải quyết phần lớn pain không. Tôi sẽ tránh dùng các từ như “nhiều tài xế” hoặc “hàng loạt” nếu chưa có mẫu và khoảng thời gian cụ thể. Điều này giúp quyết định Go/Not Yet/No-Go đáng tin cậy hơn.
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 
+Problem của nhóm là tài xế thuê xe có thể làm hỏng xe ngay sau khi nhận nhưng sau khi báo lỗi lại không có mã và trạng thái bảo hành rõ ràng, trong khi giờ thuê có thể vẫn tiếp tục chạy. Quy trình hiện tại đi từ phát hiện lỗi, báo hotline/chat, chờ xếp lịch, sửa tại xưởng rồi nhận lại hoặc trả xe; bottleneck là giai đoạn chờ không có visibility. Nhóm đo tỷ lệ case được cấp mã trong dưới 5 phút, số lần hỏi lại và tỷ lệ trả xe sau khi báo lỗi. Boundary là AI không được tự quyết định dừng tiền thuê, đổi xe hay hoàn tiền; các quyết định này cần người có thẩm quyền kiểm tra. Mức can thiệp phù hợp nhất là Workflow, trong đó Rule tạo mã và gửi trạng thái, còn AI chỉ hỗ trợ soạn ticket hoặc checklist bằng chứng. Nếu chưa xác minh được pain bằng dữ liệu thực tế, nhóm giữ quyết định Not Yet thay vì vội xây agent. Pilot nhỏ nhất là thử trên một nhóm xe hoặc một đối tác, đo baseline trước và so sánh sau một thời gian cố định.
 ---
 
 ## 7. Tài liệu tham khảo

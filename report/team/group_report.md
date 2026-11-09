@@ -16,7 +16,7 @@
 
 ### 2.1. Pitch
 
-| # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
+| # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện (ai hỏi/đặt) |
 |---:|---|---|---|---|---|
 | 1 | Cường | Xe thuê hỏng đã báo: sự cố mờ trên hệ thống trong khi trừ thuê vẫn chạy | Tài xế thuê xe; CSKH/kế toán | Hai mạch lệch: sự cố thủ công vs billing tự động (ngày–tuần) | Đức: Policy tạm dừng thuê khi BH có chưa? Baseline % trả xe lấy ở đâu? · Khánh: Bản thân Cường đã trực tiếp gặp cảnh xe thuê hỏng mà vẫn bị trừ tiền chưa hay chỉ quan sát qua nhóm chat, và nếu không tiếp cận được dữ liệu của hãng xe thì nhóm đo baseline bằng cách nào? |
 | 2 | Cường | Tới điểm đón khu Vin mà khách chưa ra: chờ / vòng / hủy đều lỗ | Tài xế ô tô công nghệ | Sau “đã tới điểm”: chờ + vòng vài–15'+ | Khánh: Tín hiệu “khách còn ra” lấy từ đâu? |
@@ -69,7 +69,7 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 **Vì sao chọn:** Bottleneck là **một lệch quy trình cụ thể** (hai mạch: sự cố thủ công vs billing tự động), impact tiền + trả xe, MVP so sánh 4 mức rất sạch (Rule nối ticket↔billing, không cần AI để “tạo mã”). Nhóm chấp nhận Feasibility kiểm chứng khó hơn bài học tập vì muốn làm bài có kết luận Rule rõ và research thị trường fleetrental đã có Pause Rental.
 
-**Vì sao loại các candidate còn lại:**
+**Vì sao loại các candidate còn lại:** Các card còn lại chủ yếu dựa trên trải nghiệm cá nhân hoặc chưa có bằng chứng đủ mạnh về mức độ ảnh hưởng. Một số card có thể được giải quyết trước bằng thói quen, checklist hoặc quy tắc lưu trữ.
 
 - **Gom tài liệu ôn thi:** Điểm tổng cao hơn, dễ poll trong lớp, nhưng nhóm thống nhất ưu tiên bài có lệch tiền/vận hành và kết luận “không tự xây AI”. Ghi làm hướng tiếp theo nếu mở rộng lab học tập.
 - **Gap JD:** Quy trình đẹp nhưng metric tự đánh giá năng lực dễ ảo; giữ vòng sau.
@@ -127,7 +127,7 @@ Tổng hợp:
 | Báo cáo cá nhân Cường (CP1–CP2) | 1 actor chính | Bottleneck hai mạch; metric % mã &lt;5' và cờ billing | Baseline % trả xe chưa có số cứng → phải đo sau |
 | Research tool | 3 nguồn (Moiboo ×2, Rently) | Thị trường đã có Pause Rental + incident status gắn booking | Tool quốc tế ≠ mọi fleet VN đã dùng; policy pause chưa chắc |
 
-**Nhóm đã sửa problem thế nào sau kiểm chứng:**
+**Nhóm đã sửa problem thế nào sau kiểm chứng:** Chưa có kiểm chứng chính thức nên chưa kết luận về tỷ lệ trả xe hoặc tỷ lệ bị tính tiền. Nhóm thu hẹp phạm vi về việc tạo mã và cập nhật trạng thái sau khi báo lỗi; các quyết định tiền thuê, đổi xe và hoàn tiền vẫn cần người có thẩm quyền.
 
 - Thu hẹp: không giải “cả bảo hiểm”; chỉ **nối sự cố đã báo → trạng thái hệ thống → tạm dừng/ghi nhận billing**.
 - Khẳng định MVP = **Rule**, không phải chatbot.
@@ -339,7 +339,7 @@ Vì sao: Phần lõi là if/else theo điều kiện SOP (có báo lỗi hợp l
 
 **Lý do:** Không rủi ro Cao nếu không để AI đụng tiền. Value/Viability Trung bình kiểm được bằng pilot SOP + đo % có mã và có cờ billing.
 
-**Nếu Go — pilot nhỏ nhất:**
+**Nếu Go — pilot nhỏ nhất:** Thử với một nhóm xe hoặc một đối tác trong thời gian cố định; dùng form + mã ticket, đo baseline trước và so sánh sau về tỷ lệ cấp mã, số lần hỏi lại, thời gian chờ và lỗi billing.
 
 1. Một fleet (hoặc giả lập ops): form báo lỗi → Google Sheet/DB đơn giản có mã + status.
 2. SOP: đủ điều kiện thì đánh dấu “tạm dừng/ghi nợ”; kế toán duyệt trong ngày.
