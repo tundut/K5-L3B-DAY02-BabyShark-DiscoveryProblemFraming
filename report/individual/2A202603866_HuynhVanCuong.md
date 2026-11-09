@@ -18,7 +18,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | Pain từ người khác | Khi tôi thuê xe để chạy app và xe hỏng (thường lộ ngay ngày đầu), tôi muốn sự cố được ghi nhận có mã theo dõi xuyên suốt tới bảo hành và biết có được tạm dừng tính giờ thuê hay đổi xe không, để không mất tiền thuê trong lúc chờ sửa lâu. | Tài xế thuê xe; CSKH / điều phối bên cho thuê | Chờ BH theo ngày–tuần; giờ thuê vẫn chạy; nhiều tài xế trong nhóm chat nói trả xe vì treo quá lâu (quan sát cộng đồng + trải nghiệm/nghe kể). |
+| 1 | Pain từ người khác | Khi xe thuê để chạy app bị hỏng và tôi đã báo lỗi (ví dụ nhận xe xong mới phát hiện hỏng — kể cả trường hợp ngày đầu), tôi muốn sự cố được ghi nhận có mã theo dõi xuyên suốt tới bảo hành và biết có được tạm dừng tính giờ thuê hay đổi xe không, để không mất tiền thuê trong lúc chờ sửa lâu. | Tài xế thuê xe; CSKH / điều phối bên cho thuê | Chờ BH theo ngày–tuần; giờ thuê vẫn chạy; có case nhận xe xong mới lộ hỏng (ví dụ ngày 1); nhiều tài xế trong nhóm chat nói trả xe vì treo quá lâu (quan sát cộng đồng + trải nghiệm/nghe kể). |
 | 2 | Tốn thời gian | Khi tôi (tài xế ô tô công nghệ) đã tới điểm đón ở khu Vin hoặc khu tương tự mà khách chưa ra, tôi muốn biết nên chờ tiếp, vòng chờ, hay hủy, để không vừa mất đoạn đường đã chạy tới điểm vừa mất thêm thời gian/xăng vì vòng vòng hoặc phải nhận đơn mới. | Tài xế ô tô công nghệ | Thường chờ vài–hơn mười phút; vòng vòng tốn thêm vài phút/vòng; hủy thì mất cả thời gian đã chạy tới điểm; tài xế vẫn hay chịu rủi ro vì không muốn mất khách (quan sát/nghe tài xế than). |
 | 3 | Tốn thời gian | Khi app chỉ ghi điểm đón chung chung trong khu Vin/tòa nhà, tôi muốn biết khách đang ở cổng/sảnh nào, để khỏi chạy lòng vòng trong khu và nhắn qua lại nhiều lần. | Tài xế; khách | Nhắn 2–5 tin/lượt; vòng trong khu khoảng 5–10 phút/chuyến ở điểm đón phức tạp. |
 | 4 | Pain từ người khác | Khi tôi đã tới điểm đón mà khách hủy sát giờ, tôi muốn được ghi nhận rõ mình đã di chuyển/chờ bao lâu, để khỏi mất cả đoạn đường chạy tới mà không có chuyến thay thế ngay. | Tài xế | Mất khoảng 10–20 phút đã chạy tới điểm; gặp vài lần trong ngày cao điểm (ước lượng từ quan sát tài xế). |
@@ -26,7 +26,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 **Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
 
-- Tự nghĩ trước: (1) thuê xe hỏng / thiếu theo dõi BH + tính giờ, (2) chờ khách khu Vin phải vòng vòng / rủi ro hủy.
+- Tự nghĩ trước: (1) thuê xe hỏng / thiếu theo dõi BH + tính giờ (ngày đầu chỉ là một case cụ thể, không phải lúc nào cũng vậy), (2) chờ khách khu Vin phải vòng vòng / rủi ro hủy.
 - Dùng AI/thought-partner chỉ để **mở rộng thêm 3 góc** cùng hệ tài xế (điểm đón khó tìm, hủy sát giờ, checklist trả xe) — giữ vì khớp vận hành thật, có thể đo thời gian.
 - Bỏ các gợi ý kiểu “làm chatbot / agent tự quyết hủy chuyến / tự dừng billing” — đó là giải pháp trá hình, không ghi vào cột Job Story.
 
