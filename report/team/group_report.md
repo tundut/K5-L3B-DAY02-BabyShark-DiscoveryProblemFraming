@@ -18,13 +18,13 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | Cường | Xe thuê hỏng đã báo: sự cố mờ trên hệ thống trong khi trừ thuê vẫn chạy | Tài xế thuê xe; CSKH/kế toán | Hai mạch lệch: sự cố thủ công vs billing tự động (ngày–tuần) | Đức: Policy tạm dừng thuê khi BH có chưa? Baseline % trả xe lấy ở đâu? |
+| 1 | Cường | Xe thuê hỏng đã báo: sự cố mờ trên hệ thống trong khi trừ thuê vẫn chạy | Tài xế thuê xe; CSKH/kế toán | Hai mạch lệch: sự cố thủ công vs billing tự động (ngày–tuần) | Đức: Policy tạm dừng thuê khi BH có chưa? Baseline % trả xe lấy ở đâu? · Khánh: Bản thân Cường đã trực tiếp gặp cảnh xe thuê hỏng mà vẫn bị trừ tiền chưa hay chỉ quan sát qua nhóm chat, và nếu không tiếp cận được dữ liệu của hãng xe thì nhóm đo baseline bằng cách nào? |
 | 2 | Cường | Tới điểm đón khu Vin mà khách chưa ra: chờ / vòng / hủy đều lỗ | Tài xế ô tô công nghệ | Sau “đã tới điểm”: chờ + vòng vài–15'+ | Khánh: Tín hiệu “khách còn ra” lấy từ đâu? |
 | 3 | Cường | Điểm đón trong khu ghi chung chung → lòng vòng + nhắn nhiều | Tài xế; khách | Tìm đúng cổng/sảnh ~5–10' + 2–5 tin | Khánh: Có cùng pattern với chờ khách (#2) không? |
-| 4 | Khánh | Ôn thi: tài liệu ở LMS + Drive + chat + ảnh → muốn gom đủ, không sót | Sinh viên cùng lớp | B3 sót lời dặn (~10'); B4 lọc ảnh (~15'/môn) | Cường: Metric chính là “không sót” hay “giảm phút”? |
+| 4 | Khánh | Ôn thi: tài liệu ở LMS + Drive + chat + ảnh → muốn gom đủ, không sót | Sinh viên cùng lớp | B3 sót lời dặn (~10'); B4 lọc ảnh (~15'/môn) | Đức: Nếu chỉ tạo album ảnh riêng cho từng môn và ghim tin nhắn của giảng viên, vấn đề có còn đủ nghiêm trọng để cần AI không? |
 | 5 | Khánh | Cần lại file cũ trong nhiều nhóm chat | Người nhận file | Lướt ngược chat ~20'/lần | Đức: File quá hạn/Zalo có ngoài tầm tay không? |
 | 6 | Khánh | Ảnh slide/bảng → muốn có chữ trong ghi chú, không gõ lại | Sinh viên chụp bài | Gõ lại từ ảnh ~15–20'/buổi | Cường: Live Text/Lens còn gap ở đâu? |
-| 7 | Đức | So JD với kỹ năng hiện tại để biết còn thiếu gì trước nộp hồ sơ | SV năm cuối / fresher | Đối chiếu năng lực ~30'/lần; tổng ~90' | Khánh: Bottleneck là đọc JD hay tự đánh giá sai? |
+| 7 | Đức | So JD với kỹ năng hiện tại để biết còn thiếu gì trước nộp hồ sơ | SV năm cuối / fresher | Đối chiếu năng lực ~30'/lần; tổng ~90' | Khánh: Lần gần nhất Đức tự đối chiếu kỹ năng với JD là khi nào, lúc đó Đức có đánh giá sai kỹ năng nào của mình không và làm sao phát hiện ra là mình bị thiếu? |
 | 8 | Đức | Học công nghệ mới: chọn tài liệu khớp trình độ/mục tiêu | SV IT tự học | Đọc–đánh giá tài liệu ~25'/lần | Cường: Checklist nguồn GV/cộng đồng đã đủ chưa? |
 | 9 | Đức | Gặp lỗi project: muốn khoanh nguyên nhân nhanh | SV làm project | Tìm nguyên nhân ~30'/lỗi | Khánh: Debugger + log giải được bao nhiêu %? |
 
