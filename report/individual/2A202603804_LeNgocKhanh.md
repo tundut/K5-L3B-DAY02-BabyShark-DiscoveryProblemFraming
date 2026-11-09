@@ -184,7 +184,7 @@ Mình nhờ AI đóng vai PM hoài nghi soi cả 3 card.
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
+| Pitch Problem Card | Pitch cả 3 card: gom tài liệu ôn thi, tìm lại file cũ trong nhóm chat, gõ lại chữ từ ảnh chụp bảng. Card muốn pitch nhất là #1 gom tài liệu ôn thi | Card #1 vào shortlist và được chấm 33 điểm, cao nhất trong 3 candidate. Nhóm vẫn chọn card thuê xe của Cường vì ưu tiên bài có lệch tiền và vận hành rõ hơn; card của mình được ghi làm hướng tiếp theo |
 | Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: (1) Hỏi Đức về card kỹ năng còn thiếu so với JD: "Lần gần nhất Đức tự đối chiếu kỹ năng với JD là khi nào, lúc đó Đức có đánh giá sai kỹ năng nào của mình không và làm sao phát hiện ra là mình bị thiếu?" (2) Hỏi Cường về card xe thuê hỏng vẫn bị trừ tiền: "Bản thân Cường đã trực tiếp gặp cảnh xe thuê hỏng mà vẫn bị trừ tiền chưa hay chỉ quan sát qua nhóm chat, và nếu không tiếp cận được dữ liệu của hãng xe thì nhóm đo baseline bằng cách nào?" (3) Hỏi Cường về card chờ khách ở khu Vin: "Tín hiệu khách còn ra lấy từ đâu?" (4) Hỏi Cường về card điểm đón ghi chung chung: "Có cùng pattern với card chờ khách không?" (5) Hỏi Đức về card tìm nguyên nhân lỗi khi làm project: "Debugger và log giải được bao nhiêu phần trăm?" | *Chờ Đức và Cường trả lời* |
 | Nhận phản biện | Câu hỏi tôi nhận được: (1) Cường hỏi về card #1 gom tài liệu ôn thi: "Metric chính là không sót lời dặn hay giảm phút gom?" Mình trả lời: metric chính là số lần sót lời dặn, thời gian lọc ảnh chỉ là metric phụ, vì sót mới làm mất điểm thật. (2) Đức hỏi về card #1 gom tài liệu ôn thi: "Nếu chỉ tạo album ảnh riêng cho từng môn và ghim tin nhắn của giảng viên, vấn đề có còn đủ nghiêm trọng để cần AI không?" Mình trả lời: lý thuyết thì làm vậy là xong, nhưng thực tế trong giờ học chụp bảng rất vội nên không nhớ xếp album ngay, còn trong nhóm chat thì tin ghim mới đè tin cũ hoặc lời thầy dặn nằm lẫn trong bình luận nên vẫn bị trôi. | Tôi đã sửa gì: Bổ sung vào mục Phương án không dùng AI của card #1 lý do cách thủ công thất bại: chụp vội trong lớp quên xếp album, tin ghim mới đè tin cũ. Giữ câu hỏi này để kiểm chứng ở CP4 xem bao nhiêu bạn học tự phân loại được. |
 | Gom cluster / cây OST | | |
@@ -201,7 +201,7 @@ Mình nhờ AI đóng vai PM hoài nghi soi cả 3 card.
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | Chuyển 10 ghi chú thô (tự scan) sang dạng Job Story, xếp lăng kính | Giữ đúng cấu trúc Khi… muốn… để…, tách phần dấu hiệu thật ra cột riêng | *(tự điền sau khi soát)* | *(tự điền sau khi soát)* |
+| CP1 Scan | Chuyển 10 ghi chú thô (tự scan) sang dạng Job Story, xếp lăng kính | Giữ đúng cấu trúc Khi… muốn… để…, tách phần dấu hiệu thật ra cột riêng | Bản đầu AI viết đọc lên giống văn máy, câu dài và nhiều ngoặc. Số liệu ở CP1 và ở card lúc đầu không khớp nhau, ví dụ CP1 ghi hơn 1 tiếng còn card tính ra khoảng 35 phút | Yêu cầu viết lại theo giọng tự nhiên của mình và bỏ hết ngoặc. Ở CP1 chỉ để số tròn, số phút chi tiết để trong card, và sửa cho hai chỗ khớp nhau |
 | CP2 Problem Card | Nhờ AI dựng card và quy trình từ số liệu mình kể, rồi đóng vai PM hoài nghi soi 3 card | Chỉ ra mình nhầm bước tốn thời gian với bước gây sót, chỉ ra metric chưa có baseline và phạm vi card 2 nằm ngoài tầm tay mình | Gợi ý dán thẳng ảnh vào Notion là đủ, trong khi mình đã thử và không Ctrl+F được. Gợi ý tạo album cho từng môn nhưng không tính tới việc trong lớp không có thời gian phân loại | Giữ nhu cầu chuyển ảnh thành chữ. Giữ nghi vấn "thói quen cá nhân" để kiểm chứng bằng phỏng vấn ở CP4 thay vì sửa ngay |
 | CP4 Research | | | | |
 | CP5 Quy trình | | | | |
@@ -232,4 +232,8 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 ## 7. Tài liệu tham khảo
 
--
+- [CHECKPOINTS.md](../../CHECKPOINTS.md)
+- [RUBRIC.md](../../RUBRIC.md)
+- [docs/01-worksheet.md](../../docs/01-worksheet.md)
+- [docs/02-deliverable-example.md](../../docs/02-deliverable-example.md)
+- [report/team/group_report.md](../team/group_report.md)

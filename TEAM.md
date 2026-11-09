@@ -61,19 +61,25 @@ Không ghi email hay số điện thoại vào bảng này, vì repo có thể �
 
 **Phần việc phụ trách:**
 
-- *(Khánh tự điền)*
+- Pitch 3 card cá nhân ở CP3 (đưa bài Gom tài liệu ôn thi vào shortlist chấm điểm của nhóm).
+- Đặt câu hỏi phản biện cho các candidate ở CP3; hỗ trợ Cường ở CP4 (Assumption map, kiểm chứng) và CP5 (rà soát quy trình trước/sau).
+- Cùng nhóm thảo luận chốt mức can thiệp Rule MVP và ngưỡng dừng ở CP6.
 
 **Đóng góp cụ thể:**
 
--
+- Pitch bài Gom tài liệu ôn thi (tách 2 bottleneck: sót lời dặn vs tốn thời gian lọc ảnh), đạt 33 điểm trong bảng shortlist để nhóm đối chiếu độ khả thi làm lab với bài thuê xe.
+- Đặt câu hỏi phản biện cho Cường về bằng chứng thực tế ngoài nhóm chat và cách đo baseline khi không có dữ liệu hãng xe; hỏi Đức về sai lệch khi sinh viên tự đánh giá năng lực so với JD.
+- Hỗ trợ rà soát các giả định cần kiểm chứng ở CP4 và đối chiếu luồng xử lý sự cố — tạm dừng trừ tiền thuê ở quy trình trước/sau (CP5), đảm bảo có bước người duyệt (HITL) trước khi hoàn/cấn trừ.
 
 **Bằng chứng:**
 
--
+- `report/team/group_report.md` mục 2–8
+- `report/individual/2A202603804_LeNgocKhanh.md` mục 3–4
 
 **Điều mình học được từ phần nhóm:**
 
--
+- Cần phân biệt rõ bước tốn nhiều thời gian nhất với bước gây hậu quả nặng nhất (như sót thông tin quan trọng hoặc bị trừ tiền thuê oan) để chọn đúng metric chính.
+- Không mặc định bài toán nào cũng cần AI: khi gốc vấn đề là lệch quy trình giữa ghi nhận sự cố và billing tự động, việc nối hai mạch bằng Rule + SOP và có người kiểm duyệt an toàn, thực tế hơn xây Agent.
 
 ### NguyenPhanTuanDuc-2A202603818
 
