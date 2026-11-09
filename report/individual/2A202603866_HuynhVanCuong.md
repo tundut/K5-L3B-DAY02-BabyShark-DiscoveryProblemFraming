@@ -159,8 +159,15 @@ Quy trình nháp hiện tại:
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
 | Pitch Problem Card | Pitch #1 thuê xe (billing vs sự cố mờ), #2 chờ khách Vin, #3 điểm đón | **#1 được chọn** làm candidate nhóm |
-| Phản biện bài của bạn khác | Với Khánh: metric chính “không sót” hay “giảm phút”? Với Đức: checklist nguồn đã đủ chưa? | Giữ bài học tập/JD làm hướng tiếp theo, không trộn vào MVP thuê xe |
-| Nhận phản biện | Đức/Khánh hỏi: policy pause đã có chưa? Kiểm chứng tài xế trong lab thế nào? | Thu hẹp MVP = mã sự cố + gắn billing; ghi Viability #6 + ngưỡng dừng; không hứa AI |
+| Phản biện bài của bạn khác | **1 câu / người** — Khánh (card gom tài liệu): “Metric chính là không sót lời dặn hay giảm phút gom?” · Đức (card JD): “Checklist kỹ năng từ JD + project đã đủ chưa, hay bottleneck thật là tự đánh giá sai năng lực?” | Khánh giữ sót = metric chính; Đức/JD không vào MVP, ghi hướng tiếp theo |
+| Nhận phản biện | Đức: “Policy tạm dừng thuê khi BH có chưa? Baseline % trả xe lấy ở đâu?” · Khánh: “Tín hiệu khách còn ra lấy từ đâu?” (card Vin) / cùng pattern điểm đón? | Thu hẹp MVP = mã sự cố + gắn billing; ghi Viability #6 + ngưỡng dừng; không hứa AI |
+
+**Câu hỏi phản biện mình đã đặt (CP3 — đủ 1 câu/người):**
+
+| Người được hỏi | Candidate họ pitch | Câu hỏi mình hỏi | Họ/nhóm phản ứng thế nào |
+|---|---|---|---|
+| Lê Ngọc Khánh | Gom tài liệu ôn thi (#1 của Khánh) | Metric chính là **không sót** lời dặn hay **giảm phút** gom? | Nhóm chốt sót = metric chính; phút lọc ảnh là metric phụ |
+| Nguyễn Phan Tuấn Đức | Gap kỹ năng vs JD (#1 của Đức) | Checklist nguồn/JD + project **đã đủ** chưa, hay pain nằm ở **tự đánh giá sai** năng lực? | Nhóm thấy metric tự đánh giá dễ ảo → không chọn JD làm bài nhóm |
 | Gom cluster / cây OST | Gom 9 card; OST outcome = không mất tiền oan / không trả xe khi đã báo lỗi | Gạch solution “chatbot/agent tự pause” |
 | Chọn candidate problem | Tranh luận shortlist với bài gom tài liệu (lab-fit cao hơn) | Nhóm chọn thuê xe vì lệch quy trình + kết luận Rule sạch |
 | Kiểm chứng / research | Structured quan sát/nghe kể + research Moiboo Pause Rental, Rently Incident | Đổi từ “có thể cần AI” → **Rule đủ cho MVP** |
