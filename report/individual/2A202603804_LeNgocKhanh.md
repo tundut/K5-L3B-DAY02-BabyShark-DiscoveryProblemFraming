@@ -185,7 +185,7 @@ Mình nhờ AI đóng vai PM hoài nghi soi cả 3 card.
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
 | Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: (1) Hỏi Đức về card kỹ năng còn thiếu so với JD: "Lần gần nhất Đức tự đối chiếu kỹ năng với JD là khi nào, lúc đó Đức có đánh giá sai kỹ năng nào của mình không và làm sao phát hiện ra là mình bị thiếu?" (2) Hỏi Cường về card xe thuê hỏng vẫn bị trừ tiền: "Bản thân Cường đã trực tiếp gặp cảnh xe thuê hỏng mà vẫn bị trừ tiền chưa hay chỉ quan sát qua nhóm chat, và nếu không tiếp cận được dữ liệu của hãng xe thì nhóm đo baseline bằng cách nào?" | *Chờ Đức và Cường trả lời* |
 | Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
 | Gom cluster / cây OST | | |
 | Chọn candidate problem | | |

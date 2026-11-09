@@ -18,8 +18,8 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
+| 1 | Nguyễn Phan Tuấn Đức | Khi chuẩn bị ứng tuyển thực tập hoặc Fresher, muốn biết kỹ năng còn thiếu so với JD | Sinh viên năm cuối, mới tốt nghiệp | Bước 4: đối chiếu JD với năng lực hiện tại, ~30 phút | "Lần gần nhất Đức tự đối chiếu kỹ năng với JD là khi nào, lúc đó Đức có đánh giá sai kỹ năng nào của mình không và làm sao phát hiện ra là mình bị thiếu?" (Khánh hỏi) |
+| 2 | Huỳnh Văn Cường | Khi xe thuê hỏng đã báo lỗi, muốn sự cố được ghi nhận rõ và không bị trừ tiền thuê oan trong lúc chờ | Tài xế thuê xe chạy app; CSKH bên cho thuê | Sau khi báo lỗi: sự cố không rõ trạng thái trong khi tiền thuê vẫn bị trừ, kéo dài ngày đến tuần | "Bản thân Cường đã trực tiếp gặp cảnh xe thuê hỏng mà vẫn bị trừ tiền chưa hay chỉ quan sát qua nhóm chat, và nếu không tiếp cận được dữ liệu của hãng xe thì nhóm đo baseline bằng cách nào?" (Khánh hỏi) |
 | 3 | | | | | |
 | 4 | | | | | |
 | 5 | | | | | |
