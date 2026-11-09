@@ -20,7 +20,7 @@
 |---:|---|---|---|---|---|
 | 1 | Nguyễn Phan Tuấn Đức | Khi chuẩn bị ứng tuyển thực tập hoặc Fresher, muốn biết kỹ năng còn thiếu so với JD | Sinh viên năm cuối, mới tốt nghiệp | Bước 4: đối chiếu JD với năng lực hiện tại, ~30 phút | "Lần gần nhất Đức tự đối chiếu kỹ năng với JD là khi nào, lúc đó Đức có đánh giá sai kỹ năng nào của mình không và làm sao phát hiện ra là mình bị thiếu?" (Khánh hỏi) |
 | 2 | Huỳnh Văn Cường | Khi xe thuê hỏng đã báo lỗi, muốn sự cố được ghi nhận rõ và không bị trừ tiền thuê oan trong lúc chờ | Tài xế thuê xe chạy app; CSKH bên cho thuê | Sau khi báo lỗi: sự cố không rõ trạng thái trong khi tiền thuê vẫn bị trừ, kéo dài ngày đến tuần | "Bản thân Cường đã trực tiếp gặp cảnh xe thuê hỏng mà vẫn bị trừ tiền chưa hay chỉ quan sát qua nhóm chat, và nếu không tiếp cận được dữ liệu của hãng xe thì nhóm đo baseline bằng cách nào?" (Khánh hỏi) |
-| 3 | | | | | |
+| 3 | Lê Ngọc Khánh | Khi ôn thi một môn mà tài liệu nằm ở 4 nơi, muốn gom đủ vào một chỗ để bắt đầu ôn ngay và không sót phần nào | Sinh viên, mỗi kỳ 5–6 môn | Bước 3: lướt nhóm chat tìm lời thầy dặn, ~10 phút, dễ sót nhất; bước 4: lọc ảnh trong điện thoại, ~15 phút/môn | "Nếu chỉ tạo album ảnh riêng cho từng môn và ghim tin nhắn của giảng viên, vấn đề có còn đủ nghiêm trọng để cần AI không?" (Đức hỏi) |
 | 4 | | | | | |
 | 5 | | | | | |
 | 6 | | | | | |

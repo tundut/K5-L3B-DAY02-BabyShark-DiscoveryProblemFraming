@@ -58,7 +58,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | Bottleneck (bước nào, mất bao nhiêu phút) | Có 2 bottleneck khác nhau. **Về độ chính xác: bước 3**, ~10 phút, lời dặn của thầy trong nhóm Facebook/Zalo dễ bị trôi giữa nhiều tin nhắn khác nên dễ sót nhất, cả 2 lần sót đều liên quan tới phần thầy dặn hoặc chữa thêm. **Về thời gian: bước 4**, ~15 phút/môn, ảnh chụp bảng nằm lẫn với hàng trăm ảnh cá nhân, meme, ảnh chụp màn hình cả kỳ, phải vuốt theo ngày học rồi mở từng ảnh xem thuộc chương nào |
 | Impact (nếu không giải thì sao) | Mỗi đợt thi mất 3–3,5 tiếng chỉ để gom tài liệu. Đã sót 2 lần: 1 lần tối hôm trước ngày thi mới biết có phần bài tập thầy chữa thêm trên bảng, 1 lần vào phòng thi mới nhớ ra lưu ý thầy nhắn trong nhóm Zalo |
 | Success metric (baseline → target) | **Metric chính:** số tài liệu, lưu ý quan trọng bị sót mỗi đợt thi: trung bình 2 nội dung/đợt thi 5 môn → 0. **Metric phụ:** thời gian tìm ảnh ở bước 4: ~15 phút/môn → 5 phút/môn. Đo bằng cách so danh sách tài liệu với bạn cùng lớp trước ngày thi, sau khi thi ghi lại phần nào thầy đã dặn mà mình chưa ôn, và bấm giờ bước tìm ảnh ở đợt thi cuối kỳ tới |
-| Phương án không dùng AI | Tạo album ảnh riêng cho từng môn ngay sau buổi học. Ghim tin nhắn dặn dò của thầy trong nhóm. Lớp dùng chung 1 thư mục Drive chia theo tuần, lớp trưởng cập nhật sau mỗi buổi |
+| Phương án không dùng AI | Tạo album ảnh riêng cho từng môn ngay sau buổi học. Ghim tin nhắn dặn dò của thầy trong nhóm. Lớp dùng chung 1 thư mục Drive chia theo tuần, lớp trưởng cập nhật sau mỗi buổi. **Hạn chế thực tế:** trong giờ học chụp bảng rất vội nên hay quên xếp album ngay; trong nhóm chat, tin ghim mới đè lên tin ghim cũ, lời thầy dặn có khi nằm lẫn trong bình luận nên vẫn bị trôi. Cần kiểm chứng ở CP4 xem các bạn khác có duy trì được cách thủ công này không |
 | Giả thuyết về AI (nếu có) | AI tự xếp ảnh chụp bảng, slide vào đúng môn và chương, lọc ra các tin nhắn dặn dò liên quan đến thi trong nhóm chat. Người học vẫn tự soát lại danh sách cuối |
 | Cảm nhận nhanh | Rule, có thể lên Workflow nếu phải tự phân loại ảnh |
 
@@ -186,7 +186,7 @@ Mình nhờ AI đóng vai PM hoài nghi soi cả 3 card.
 |---|---|---|
 | Pitch Problem Card | | |
 | Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: (1) Hỏi Đức về card kỹ năng còn thiếu so với JD: "Lần gần nhất Đức tự đối chiếu kỹ năng với JD là khi nào, lúc đó Đức có đánh giá sai kỹ năng nào của mình không và làm sao phát hiện ra là mình bị thiếu?" (2) Hỏi Cường về card xe thuê hỏng vẫn bị trừ tiền: "Bản thân Cường đã trực tiếp gặp cảnh xe thuê hỏng mà vẫn bị trừ tiền chưa hay chỉ quan sát qua nhóm chat, và nếu không tiếp cận được dữ liệu của hãng xe thì nhóm đo baseline bằng cách nào?" | *Chờ Đức và Cường trả lời* |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
+| Nhận phản biện | Câu hỏi tôi nhận được: Đức hỏi về card #1 gom tài liệu ôn thi: "Nếu chỉ tạo album ảnh riêng cho từng môn và ghim tin nhắn của giảng viên, vấn đề có còn đủ nghiêm trọng để cần AI không?" Mình trả lời: lý thuyết thì làm vậy là xong, nhưng thực tế trong giờ học chụp bảng rất vội nên không nhớ xếp album ngay, còn trong nhóm chat thì tin ghim mới đè tin cũ hoặc lời thầy dặn nằm lẫn trong bình luận nên vẫn bị trôi. | Tôi đã sửa gì: Bổ sung vào mục Phương án không dùng AI của card #1 lý do cách thủ công thất bại: chụp vội trong lớp quên xếp album, tin ghim mới đè tin cũ. Giữ câu hỏi này để kiểm chứng ở CP4 xem bao nhiêu bạn học tự phân loại được. |
 | Gom cluster / cây OST | | |
 | Chọn candidate problem | | |
 | Kiểm chứng / research | | |
