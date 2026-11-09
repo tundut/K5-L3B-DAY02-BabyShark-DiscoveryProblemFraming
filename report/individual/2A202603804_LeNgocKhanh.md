@@ -185,7 +185,7 @@ Mình nhờ AI đóng vai PM hoài nghi soi cả 3 card.
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
 | Pitch Problem Card | Pitch cả 3 card: gom tài liệu ôn thi, tìm lại file cũ trong nhóm chat, gõ lại chữ từ ảnh chụp bảng. Card muốn pitch nhất là #1 gom tài liệu ôn thi | Card #1 vào shortlist và được chấm 33 điểm, cao nhất trong 3 candidate. Nhóm vẫn chọn card thuê xe của Cường vì ưu tiên bài có lệch tiền và vận hành rõ hơn; card của mình được ghi làm hướng tiếp theo |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: (1) Hỏi Đức về card kỹ năng còn thiếu so với JD: "Lần gần nhất Đức tự đối chiếu kỹ năng với JD là khi nào, lúc đó Đức có đánh giá sai kỹ năng nào của mình không và làm sao phát hiện ra là mình bị thiếu?" (2) Hỏi Cường về card xe thuê hỏng vẫn bị trừ tiền: "Bản thân Cường đã trực tiếp gặp cảnh xe thuê hỏng mà vẫn bị trừ tiền chưa hay chỉ quan sát qua nhóm chat, và nếu không tiếp cận được dữ liệu của hãng xe thì nhóm đo baseline bằng cách nào?" (3) Hỏi Cường về card chờ khách ở khu Vin: "Tín hiệu khách còn ra lấy từ đâu?" (4) Hỏi Cường về card điểm đón ghi chung chung: "Có cùng pattern với card chờ khách không?" (5) Hỏi Đức về card tìm nguyên nhân lỗi khi làm project: "Debugger và log giải được bao nhiêu phần trăm?" | *Chờ Đức và Cường trả lời* |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: (1) Hỏi Đức về card kỹ năng còn thiếu so với JD: "Lần gần nhất Đức tự đối chiếu kỹ năng với JD là khi nào, lúc đó Đức có đánh giá sai kỹ năng nào của mình không và làm sao phát hiện ra là mình bị thiếu?" (2) Hỏi Cường về card xe thuê hỏng vẫn bị trừ tiền: "Bản thân Cường đã trực tiếp gặp cảnh xe thuê hỏng mà vẫn bị trừ tiền chưa hay chỉ quan sát qua nhóm chat, và nếu không tiếp cận được dữ liệu của hãng xe thì nhóm đo baseline bằng cách nào?" (3) Hỏi Cường về card chờ khách ở khu Vin: "Tín hiệu khách còn ra lấy từ đâu?" (4) Hỏi Cường về card điểm đón ghi chung chung: "Có cùng pattern với card chờ khách không?" (5) Hỏi Đức về card tìm nguyên nhân lỗi khi làm project: "Debugger và log giải được bao nhiêu phần trăm?" | (1) Đức nhận ra mình từng đánh giá quá cao kỹ năng lập trình khi không đưa ra được project cụ thể để chứng minh yêu cầu trong JD → Đức tách bước 4 thành lập bằng chứng và so sánh, đồng thời nhóm không chọn bài JD vì việc tự đánh giá dễ bị ảo. (2) Cường làm rõ thông tin lấy từ quan sát/nghe kể, sửa metric không bịa % trả xe mà đo % case có mã dưới 5 phút và giảm trả xe so với baseline nội bộ đo sau; bổ sung điều kiện Viability và ngưỡng dừng. (3)(4) Cường gộp pattern điểm đón và chờ khách ở khu Vin, chỉ giữ làm bài phụ. |
 | Nhận phản biện | Câu hỏi tôi nhận được: (1) Cường hỏi về card #1 gom tài liệu ôn thi: "Metric chính là không sót lời dặn hay giảm phút gom?" Mình trả lời: metric chính là số lần sót lời dặn, thời gian lọc ảnh chỉ là metric phụ, vì sót mới làm mất điểm thật. (2) Đức hỏi về card #1 gom tài liệu ôn thi: "Nếu chỉ tạo album ảnh riêng cho từng môn và ghim tin nhắn của giảng viên, vấn đề có còn đủ nghiêm trọng để cần AI không?" Mình trả lời: lý thuyết thì làm vậy là xong, nhưng thực tế trong giờ học chụp bảng rất vội nên không nhớ xếp album ngay, còn trong nhóm chat thì tin ghim mới đè tin cũ hoặc lời thầy dặn nằm lẫn trong bình luận nên vẫn bị trôi. | Tôi đã sửa gì: Bổ sung vào mục Phương án không dùng AI của card #1 lý do cách thủ công thất bại: chụp vội trong lớp quên xếp album, tin ghim mới đè tin cũ. Giữ câu hỏi này để kiểm chứng ở CP4 xem bao nhiêu bạn học tự phân loại được. |
 | Gom cluster / cây OST | Không trực tiếp tham gia gom cluster và vẽ cây OST | Card gom tài liệu ôn thi của mình nằm trong cluster "Gom / tìm thông tin học" (mục 2.2 báo cáo nhóm) |
 | Chọn candidate problem | Đưa card gom tài liệu ôn thi vào shortlist 3 candidate để nhóm chấm điểm và so độ vừa sức lab với card thuê xe | Card của mình được 33 điểm, cao nhất, nhưng nhóm chọn card thuê xe của Cường vì lệch quy trình giữa sự cố và tiền thuê rõ hơn, kết luận Rule sạch hơn. Card của mình ghi làm hướng tiếp theo ở mục 9 báo cáo nhóm |
@@ -203,10 +203,10 @@ Mình nhờ AI đóng vai PM hoài nghi soi cả 3 card.
 |---|---|---|---|---|
 | CP1 Scan | Chuyển 10 ghi chú thô (tự scan) sang dạng Job Story, xếp lăng kính | Giữ đúng cấu trúc Khi… muốn… để…, tách phần dấu hiệu thật ra cột riêng | Bản đầu AI viết đọc lên giống văn máy, câu dài và nhiều ngoặc. Số liệu ở CP1 và ở card lúc đầu không khớp nhau, ví dụ CP1 ghi hơn 1 tiếng còn card tính ra khoảng 35 phút | Yêu cầu viết lại theo giọng tự nhiên của mình và bỏ hết ngoặc. Ở CP1 chỉ để số tròn, số phút chi tiết để trong card, và sửa cho hai chỗ khớp nhau |
 | CP2 Problem Card | Nhờ AI dựng card và quy trình từ số liệu mình kể, rồi đóng vai PM hoài nghi soi 3 card | Chỉ ra mình nhầm bước tốn thời gian với bước gây sót, chỉ ra metric chưa có baseline và phạm vi card 2 nằm ngoài tầm tay mình | Gợi ý dán thẳng ảnh vào Notion là đủ, trong khi mình đã thử và không Ctrl+F được. Gợi ý tạo album cho từng môn nhưng không tính tới việc trong lớp không có thời gian phân loại | Giữ nhu cầu chuyển ảnh thành chữ. Giữ nghi vấn "thói quen cá nhân" để kiểm chứng bằng phỏng vấn ở CP4 thay vì sửa ngay |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP4 Research | Không dùng trực tiếp (hỗ trợ Cường rà soát giả định từ kết quả nhóm) | — | — | Tự đối chiếu các giả định của nhóm để không bịa số liệu % trả xe khi chưa có dữ liệu từ hãng |
+| CP5 Quy trình | Không dùng trực tiếp (tham gia rà soát luồng trước/sau cùng nhóm) | — | — | Tự kiểm tra điểm nối giữa luồng báo sự cố và luồng tạm dừng tính tiền, yêu cầu giữ bước người duyệt (HITL) |
+| CP5–6 Problem Statement | Không dùng | — | — | — |
+| CP6 Mức can thiệp / quyết định | Không dùng trực tiếp (thảo luận trực tiếp cùng nhóm) | — | — | Cùng nhóm thống nhất hạ mức can thiệp xuống Rule cho MVP vì bài toán đụng tới tiền thuê, không dùng Agent tự động |
 
 ---
 
@@ -216,17 +216,31 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Bài của Cường (xe thuê hỏng vẫn trừ tiền) có sức nặng thực tế lớn vì đụng đến thu nhập và quyết định trả xe của người lao động. Bài của Đức cho thấy nếu một bước phụ thuộc vào cảm tính người dùng thì rất khó đo đạc. Từ đó, mình thấy bài gom tài liệu của mình gần gũi nhưng thiên về cá nhân, còn bài nhóm có tính vận hành rõ ràng hơn.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Có, ban đầu nhóm dễ nghĩ đến chatbot hay AI tự động dừng tiền thuê. Nhóm nhận ra khi tự hỏi: "Nếu chỉ dùng form sinh mã ticket theo rule và SOP thì đã giải quyết được phần lớn chưa?". Nhóm đã xử lý bằng cách xóa bỏ từ khóa công cụ ra khỏi OST và Problem Statement để quay về bản chất đứt gãy quy trình.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Mình đã đổi ý từ CP2 sau khi nhận phản hồi của AI đóng vai PM hoài nghi. Ban đầu mình nghĩ cái đau lớn nhất là mất thời gian lọc ảnh, nhưng thực ra việc sót lời dặn của thầy mới làm mất điểm thật. Mình đã đổi metric chính từ thời gian sang số lần sót. Sau đó ở CP3, khi Đức hỏi về album và ghim tin nhắn, mình bổ sung thêm phần hạn chế thực tế vào card (như chụp vội quên xếp album, tin ghim mới đè tin cũ).
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Điều bất ngờ là khi research các phần mềm quản lý đội xe ở CP4, nhóm thấy tính năng "Pause Rental" thực ra đã có sẵn dưới dạng các quy tắc (Rule) cơ bản. Điều này chứng minh bài toán hoàn toàn không cần mô hình AI phức tạp, mà cái thiếu chỉ là sự đồng bộ dữ liệu giữa các bộ phận trong doanh nghiệp.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Khó nhất là viết đúng trọng tâm nỗi đau mà không lồng ghép giải pháp. Success Metric cũng rất thách thức vì không có dữ liệu nội bộ nên phải dùng baseline đo sau và so sánh tỷ lệ trả xe. Boundary bắt buộc phải chốt chặt là không được để hệ thống tự ý quyết định tiền bạc mà luôn cần con người phê duyệt.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Nếu làm lại, mình sẽ chủ động tham gia sâu hơn vào việc gom cluster, vẽ OST và viết Problem Statement cùng nhóm thay vì chỉ hỗ trợ. Về phản biện, mình sẽ yêu cầu làm rõ nguồn dữ liệu thực tế từ bước đầu thay vì phải phụ thuộc nhiều vào desk research ở các bước sau.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+Bài toán nhóm chọn là khi xe thuê bị hỏng nhưng sự cố không rõ trên hệ thống trong khi tiền thuê vẫn bị trừ tự động. Quy trình hiện tại bị đứt gãy thành hai mạch chạy lệch nhau giữa bộ phận báo hỏng và hệ thống tính tiền. Metric đo lường là tỷ lệ sự cố có mã dưới 5 phút, tỷ lệ gắn cờ tạm dừng và mức giảm tỷ lệ trả xe so với baseline. Boundary quy định hệ thống tuyệt đối không được tự ý hoàn tiền hay đóng sự cố mà mọi thay đổi về tiền phải do con người phê duyệt (HITL). Mức can thiệp chọn là Rule cho MVP thông qua biểu mẫu và mã ticket, chưa cần dùng Agent. Quyết định cuối cùng là Go ở phạm vi nhỏ trên đội xe có sẵn SOP, kèm ngưỡng dừng rõ ràng.
 
 ---
 
