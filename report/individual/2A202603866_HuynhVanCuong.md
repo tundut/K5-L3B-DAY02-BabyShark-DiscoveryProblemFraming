@@ -18,7 +18,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | Pain từ người khác | Khi xe thuê để chạy app bị hỏng và tôi đã báo lỗi (ví dụ nhận xe xong mới phát hiện hỏng — kể cả trường hợp ngày đầu), tôi muốn sự cố được ghi nhận có mã theo dõi xuyên suốt tới bảo hành và biết có được tạm dừng tính giờ thuê hay đổi xe không, để không mất tiền thuê trong lúc chờ sửa lâu. | Tài xế thuê xe; CSKH / điều phối bên cho thuê | Chờ BH theo ngày–tuần; giờ thuê vẫn chạy; có case nhận xe xong mới lộ hỏng (ví dụ ngày 1); nhiều tài xế trong nhóm chat nói trả xe vì treo quá lâu (quan sát cộng đồng + trải nghiệm/nghe kể). |
+| 1 | Pain từ người khác | Khi xe thuê bị hỏng và tôi đã báo lỗi, tôi muốn sự cố được theo dõi rõ trên hệ thống và việc trừ tiền thuê được tạm dừng hoặc ghi nhận để hoàn/cấn trừ sau có căn cứ, để không bị trừ thuê tự động trong lúc xe không dùng được mà không biết đòi lại thế nào. | Tài xế thuê xe; CSKH / kế toán bên cho thuê | Hệ thống vẫn trừ thuê tự động; trạng thái sự cố/BH không rõ lưu–quản lý thế nào; hoàn sau mơ hồ; treo ngày–tuần; có case nhận xe xong mới lộ hỏng (ví dụ ngày 1); nhiều tài xế nói trả xe vì treo (quan sát/nghe kể). |
 | 2 | Tốn thời gian | Khi tôi (tài xế ô tô công nghệ) đã tới điểm đón ở khu Vin hoặc khu tương tự mà khách chưa ra, tôi muốn biết nên chờ tiếp, vòng chờ, hay hủy, để không vừa mất đoạn đường đã chạy tới điểm vừa mất thêm thời gian/xăng vì vòng vòng hoặc phải nhận đơn mới. | Tài xế ô tô công nghệ | Thường chờ vài–hơn mười phút; vòng vòng tốn thêm vài phút/vòng; hủy thì mất cả thời gian đã chạy tới điểm; tài xế vẫn hay chịu rủi ro vì không muốn mất khách (quan sát/nghe tài xế than). |
 | 3 | Tốn thời gian | Khi app chỉ ghi điểm đón chung chung trong khu Vin/tòa nhà, tôi muốn biết khách đang ở cổng/sảnh nào, để khỏi chạy lòng vòng trong khu và nhắn qua lại nhiều lần. | Tài xế; khách | Nhắn 2–5 tin/lượt; vòng trong khu khoảng 5–10 phút/chuyến ở điểm đón phức tạp. |
 | 4 | Pain từ người khác | Khi tôi đã tới điểm đón mà khách hủy sát giờ, tôi muốn được ghi nhận rõ mình đã di chuyển/chờ bao lâu, để khỏi mất cả đoạn đường chạy tới mà không có chuyến thay thế ngay. | Tài xế | Mất khoảng 10–20 phút đã chạy tới điểm; gặp vài lần trong ngày cao điểm (ước lượng từ quan sát tài xế). |
@@ -38,7 +38,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 | Xe thuê hỏng đã báo lỗi nhưng thiếu quy trình/hệ thống chuẩn (không mã–trạng thái); BH lâu mà giờ thuê vẫn trừ | Pain nắm rõ; bottleneck = bước sau báo lỗi; impact tiền + trả xe đo được; vừa sức lab (MVP có thể là Rule) | SLA BH và policy tạm dừng giờ thuê chính thức của từng bên cho thuê; baseline % trả xe chưa có số nội bộ |
+| 1 | Xe thuê hỏng đã báo lỗi: phần sự cố/BH không rõ có được lưu–quản lý thế nào trên hệ thống, trong khi **trừ tiền thuê vẫn chạy tự động**; sau này hoàn/cấn trừ ra sao cũng mơ hồ | Pain nắm rõ; lệch “billing tự động” vs “sự cố thủ công/mờ”; impact tiền + trả xe; MVP có thể là Rule | Policy chính thức tạm dừng/hoàn giờ thuê khi BH; cách hệ thống hiện lưu (hay không lưu) trạng thái sự cố; baseline % trả xe |
 | 2 | Tài xế ô tô chờ khách ở khu Vin / tương tự: vòng vòng hoặc hủy đều lỗ thời gian/xăng sau khi đã chạy tới điểm | Actor rõ; quy trình ngắn; rủi ro quyết định chờ/hủy cụ thể | Tần suất đúng theo từng khu; tín hiệu “khách còn ra” lấy từ đâu |
 | 3 | Điểm đón trong khu Vin/tòa ghi chung chung → chạy lòng vòng + nhắn nhiều lần | Dễ vẽ quy trình; hay đi kèm pain #2 | Bao nhiêu % cuốc bị lệch điểm vs chỉ chậm khách |
 
@@ -46,36 +46,38 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi xe thuê để chạy app bị hỏng và tôi đã báo lỗi, tôi muốn sự cố được ghi nhận theo quy trình/hệ thống chuẩn (có mã theo dõi tới bảo hành) và biết có được tạm dừng tính giờ thuê hay đổi xe không, để không mất tiền thuê trong lúc chờ sửa lâu. |
-| Actor | Tài xế thuê xe chạy app; CSKH / điều phối bên cho thuê; xưởng BH |
-| Thời điểm / bối cảnh | Sau khi phát hiện xe hỏng và đã báo (có case nhận xe xong mới lộ hỏng — kể cả ngày đầu, chỉ là ví dụ); chờ BH kéo dài |
-| Quy trình hiện tại (3–7 bước) | Phát hiện hỏng → báo hotline/chat thủ công → chờ (không mã/trạng thái chuẩn) → xếp lịch / đưa vào BH → sửa lâu → nhận lại hoặc trả xe |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Bước sau “đã báo lỗi”: không có mã + không cập nhật trạng thái xuyên suốt; kéo dài theo **ngày–tuần**; mỗi lần hỏi lại ~10–30 phút; **giờ thuê vẫn trừ** trong lúc chờ |
-| Impact (nếu không giải thì sao) | Tài xế mất tiền thuê + mất thu nhập → trả xe; bên cho thuê mất công suất đội xe + tăng tranh chấp |
-| Success metric (baseline → target) | (1) % case báo lỗi có mã ticket trong &lt; 5 phút: ~0% → ≥ 90%. (2) Giảm tỉ lệ trả xe trong 7 ngày sau báo lỗi so với baseline nội bộ (đo sau khi có quy trình). |
-| Phương án không dùng AI | Form báo lỗi bắt buộc (ảnh, triệu chứng, ngày nhận xe) → sinh mã ticket rule-based → trạng thái cố định (tiếp nhận / vào BH / xong) đẩy App/SMS; SOP tạm dừng hoặc điều chỉnh giờ thuê khi xe vào BH / đủ điều kiện đổi xe; CSKH cập nhật trạng thái theo checklist |
-| Giả thuyết về AI (nếu có) | **MVP không cần AI.** AI chỉ xét sau nếu CSKH ngập tin nhắn tự do: hỗ trợ checklist ảnh đủ/thiếu, draft tin cập nhật trạng thái — không tự pause billing / không tự đổi xe. |
+| Job Story | Khi xe thuê bị hỏng và tôi đã báo lỗi, tôi muốn sự cố được ghi nhận–theo dõi trên hệ thống rõ ràng (không chỉ chat rời) và việc trừ tiền thuê được tạm dừng hoặc ghi nhận để hoàn/cấn trừ sau có căn cứ, để không bị hệ thống trừ thuê tự động trong lúc xe không dùng được mà không biết sau này đòi lại thế nào. |
+| Actor | Tài xế thuê xe chạy app; CSKH / điều phối / kế toán bên cho thuê; xưởng BH |
+| Thời điểm / bối cảnh | Sau khi phát hiện hỏng và đã báo (có case nhận xe xong mới lộ — ngày đầu chỉ là ví dụ); BH/treo xử lý kéo dài |
+| Quy trình hiện tại (3–7 bước) | Phát hiện hỏng → báo hotline/chat → sự cố **không rõ** có được lưu/quản lý trên hệ thống thế nào → BH/chờ lâu → **hệ thống vẫn trừ tiền thuê tự động** → sau này hoàn/cấn trừ (nếu có) mơ hồ, tranh chấp hoặc bỏ cuộc / trả xe |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Lệch hai mạch: (A) sự cố/BH quản lý thủ công hoặc không minh bạch; (B) **billing tự động vẫn chạy**. Treo theo ngày–tuần; hỏi lại ~10–30 phút/lần; không biết “trừ rồi thì hoàn kiểu gì / khi nào” |
+| Impact (nếu không giải thì sao) | Mất tiền thuê oan + mất thu nhập → trả xe; tranh chấp hoàn tiền tốn thêm thời gian CSKH/kế toán |
+| Success metric (baseline → target) | (1) % case báo lỗi có mã + trạng thái trên hệ thống trong &lt; 5 phút: ~0% → ≥ 90%. (2) % case BH/treo có **cờ/ghi nhận gắn với billing** (tạm dừng hoặc đánh dấu hoàn sau) trước khi hết ngày sự cố. (3) Giảm trả xe trong 7 ngày sau báo lỗi so với baseline nội bộ. |
+| Phương án không dùng AI | Form báo lỗi → mã ticket + trạng thái trên hệ thống; **rule gắn ticket với thuê**: đủ điều kiện thì tạm dừng trừ hoặc ghi nợ hoàn; sổ hoàn/cấn trừ có trạng thái (chờ duyệt / đã hoàn); tài xế xem được trên app |
+| Giả thuyết về AI (nếu có) | **MVP không cần AI** — cần nối sự cố với billing bằng rule. AI sau này chỉ phụ (đọc mô tả chat, draft trả lời hoàn tiền) — không tự trừ/hoàn. |
 | Cảm nhận nhanh | **Rule** (ưu tiên) / No AI cho MVP |
 
 Quy trình nháp hiện tại:
 
 ```text
-HIỆN TẠI — treo theo ngày–tuần (giờ thuê vẫn chạy)
+HIỆN TẠI — hai mạch lệch nhau
 
-[1 Phát hiện xe hỏng] ⏱ ngay
+[1 Phát hiện hỏng] → [2 Báo chat/hotline]
         │
         ▼
-[2 Báo hotline / chat thủ công] ⏱ ~10–30p
+[3 Sự cố: không rõ lưu/quản lý trên hệ thống thế nào] 🔴
+   (chat rời, hỏi lại ~10–30p, treo ngày–tuần)
         │
         ▼
-[3 Chờ xử lý — KHÔNG mã / KHÔNG trạng thái chuẩn] 🔴 BOTTLENECK
-   ⏱ ngày–tuần · mỗi lần hỏi lại ~10–30p · ⚠ giờ thuê vẫn trừ
+[4 BH / chờ sửa] ⏱ dài
+        │
+        │   song song:
+        ▼
+[B Hệ thống VẪN TRỪ TIỀN THUÊ TỰ ĐỘNG] 🔴 BOTTLENECK (tiền)
         │
         ▼
-[4 Đưa vào / chờ bảo hành] ⏱ dài, ít cập nhật
-        │
-        ▼
-[5 Nhận lại xe / trả xe (churn)]
+[5 Sau này hoàn / cấn trừ?] ⚠ không rõ quy trình → tranh chấp
+   hoặc [6 Trả xe / bỏ cuộc]
 ```
 
 ### Problem Card #2
@@ -136,9 +138,9 @@ Quy trình nháp hiện tại:
 
 ### Card muốn pitch nhất
 
-- Card số: **#1** (xe thuê hỏng — thiếu quy trình/hệ thống chuẩn; BH lâu vẫn trừ tiền thuê)
-- Vì sao: Pain và impact tiền/trả xe rõ; bottleneck chỉ đúng một đoạn sau báo lỗi; MVP có thể là Rule (ticket + trạng thái + SOP billing) — khớp tinh thần lab “chọn mức đơn giản nhất đủ dùng”, kể cả ít/không AI.
-- Câu hỏi muốn nhóm phản biện: *Nếu form + mã ticket + trạng thái + SOP tạm dừng giờ thuê (không AI) đã giảm trừ tiền oan và trả xe, nhóm có đồng ý dừng ở Rule/No AI cho MVP không — và AI (nếu có) chỉ được phép làm việc gì thêm?*
+- Card số: **#1** (sự cố/BH không rõ trên hệ thống trong khi **trừ thuê tự động**; hoàn sau mơ hồ)
+- Vì sao: Lệch hai mạch (sự cố mờ vs billing chạy) là pain tiền thật; MVP = Rule nối ticket với tạm dừng/ghi nhận hoàn — không cần AI để “tạo ticket”.
+- Câu hỏi muốn nhóm phản biện: *Nếu đã có mã sự cố trên hệ thống và rule gắn với tạm dừng/hoàn thuê (không AI), có đủ giải quyết việc bị trừ tự động lúc xe không dùng được không — AI còn cần ở bước nào?*
 
 ### AI đã phản biện card thế nào
 
